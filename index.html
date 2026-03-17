@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Business Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#kpi">KPI Metrics</a></li>
+                <li><a href="#expenses">Expense Tracker</a></li>
+                <li><a href="#income">Income Report</a></li>
+                <li><a href="#project">Project Timeline</a></li>
+                <li><a href="#timesheet">Employee Timesheet</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="kpi">
+        <h2>KPI Metrics</h2>
+        <div class="kpi">
+            <div class="metric">
+                <h3>Total Revenue</h3>
+                <p id="total-revenue">$0</p>
+            </div>
+            <div class="metric">
+                <h3>Total Expenses</h3>
+                <p id="total-expenses">$0</p>
+            </div>
+            <div class="metric">
+                <h3>Net Profit</h3>
+                <p id="net-profit">$0</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="expenses">
+        <h2>Expense Tracker</h2>
+        <form id="expense-form">
+            <input type="text" id="expense-name" placeholder="Expense Name" required>
+            <input type="number" id="expense-amount" placeholder="Amount" required step="0.01">
+            <button type="submit">Add Expense</button>
+        </form>
+        <ul id="expense-list"></ul>
+    </section>
+
+    <section id="income">
+        <h2>Income Report</h2>
+        <form id="income-form">
+            <input type="text" id="income-source" placeholder="Income Source" required>
+            <input type="number" id="income-amount" placeholder="Amount" required step="0.01">
+            <button type="submit">Add Income</button>
+        </form>
+        <ul id="income-list"></ul>
+    </section>
+
+    <section id="project">
+        <h2>Project Timeline</h2>
+        <div id="timeline">
+            <h3>Project A</h3>
+            <p>Status: Ongoing</p>
+            <p>Deadline: 2026-12-31</p>
+        </div>
+        <div id="timeline">
+            <h3>Project B</h3>
+            <p>Status: Completed</p>
+            <p>Deadline: 2026-06-30</p>
+        </div>
+    </section>
+
+    <section id="timesheet">
+        <h2>Employee Timesheet</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Hours Worked</th>
+            </tr>
+            <tr>
+                <td>Employee 1</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>Employee 2</td>
+                <td>35</td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <p>© 2026 Business Dashboard</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
